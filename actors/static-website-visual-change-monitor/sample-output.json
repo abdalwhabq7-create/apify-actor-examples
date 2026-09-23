@@ -1,0 +1,9 @@
+[
+  {
+    "url": "https://example.com",
+    "width": 1280,
+    "height": 800,
+    "comparison": "no-baseline",
+    "renderMode": "static-html-javascript-disabled"
+  }
+]

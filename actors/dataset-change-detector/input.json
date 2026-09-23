@@ -1,0 +1,40 @@
+{
+  "previous": [
+    {
+      "id": "SKU-1",
+      "price": 10,
+      "inStock": true
+    },
+    {
+      "id": "SKU-2",
+      "price": 5
+    }
+  ],
+  "current": [
+    {
+      "id": "SKU-1",
+      "price": 12,
+      "inStock": false
+    },
+    {
+      "id": "SKU-3",
+      "price": 8
+    }
+  ],
+  "keyFields": [
+    "id"
+  ],
+  "allowRemoved": true,
+  "maxResults": 3,
+  "currentSnapshotComplete": true,
+  "allowEmptySnapshot": false,
+  "seedBaselineOnly": false,
+  "minPriceChangePercent": 0,
+  "onlyPriceOrStockChanges": false,
+  "priceField": "price",
+  "currencyField": "currency",
+  "stockFields": [
+    "inStock"
+  ],
+  "maxRequests": 100
+}

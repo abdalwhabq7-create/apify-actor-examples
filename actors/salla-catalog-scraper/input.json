@@ -1,0 +1,12 @@
+{
+  "stores": [
+    "salla.sa/coffee_souq",
+    "otor200sa.com"
+  ],
+  "maxProductsPerStore": 3,
+  "onlyChanges": false,
+  "onlyOnSale": false,
+  "includeEndedDiscounts": false,
+  "requestDelayMs": 200,
+  "respectRobots": true
+}

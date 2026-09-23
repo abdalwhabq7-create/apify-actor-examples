@@ -1,0 +1,194 @@
+[
+  {
+    "name": "salla-catalog-scraper",
+    "title": "Salla Store Catalog & Price Scraper",
+    "category": "Commerce",
+    "arabic": "منتجات سلة",
+    "description": "Give a Salla store URL and export product prices, availability and identifiers. Use the data for catalog analysis or price monitoring.",
+    "url": "https://apify.com/abdulwhab95/salla-catalog-scraper"
+  },
+  {
+    "name": "shopify-catalog-scraper",
+    "title": "Shopify Product Price & Catalog Scraper",
+    "category": "Commerce",
+    "arabic": "منتجات Shopify",
+    "description": "Give a Shopify store domain and export public product variants with SKU, price and availability.",
+    "url": "https://apify.com/abdulwhab95/shopify-catalog-scraper"
+  },
+  {
+    "name": "woocommerce-public-catalog-scraper",
+    "title": "WooCommerce Public Catalog — Prices & Stock",
+    "category": "Commerce",
+    "arabic": "منتجات WooCommerce",
+    "description": "Give a WooCommerce store URL and export public Store API products with prices, currency and stock status.",
+    "url": "https://apify.com/abdulwhab95/woocommerce-public-catalog-scraper"
+  },
+  {
+    "name": "zid-store-catalog-scraper",
+    "title": "Zid Store Catalog & Price Scraper",
+    "category": "Commerce",
+    "arabic": "كتالوج متاجر زد",
+    "description": "Give a Zid store URL and collect product pages through its sitemap, with prices, discounts and availability.",
+    "url": "https://apify.com/abdulwhab95/zid-store-catalog-scraper"
+  },
+  {
+    "name": "zid-public-product-scraper",
+    "title": "Zid Product Scraper — Arabic Prices & Availability",
+    "category": "Commerce",
+    "arabic": "صفحات منتجات زد",
+    "description": "Give Zid product or catalog URLs and extract Product JSON-LD into product names, prices, currency and stock fields.",
+    "url": "https://apify.com/abdulwhab95/zid-public-product-scraper"
+  },
+  {
+    "name": "youcan-store-catalog-scraper",
+    "title": "YouCan Store Catalog & Price Scraper",
+    "category": "Commerce",
+    "arabic": "منتجات YouCan",
+    "description": "Give a YouCan store URL and export its public product feed, including prices and available variant metadata.",
+    "url": "https://apify.com/abdulwhab95/youcan-store-catalog-scraper"
+  },
+  {
+    "name": "salla-zid-app-store-tracker",
+    "title": "Salla & Zid App Store Tracker",
+    "category": "Commerce",
+    "arabic": "تطبيقات سلة وزد",
+    "description": "Choose Salla or Zid app directories and export app names, categories, ratings and published pricing fields.",
+    "url": "https://apify.com/abdulwhab95/salla-zid-app-store-tracker"
+  },
+  {
+    "name": "catalog-product-data-quality-checker",
+    "title": "Product Catalog Quality Checker — CSV, SKU & Prices",
+    "category": "Data quality",
+    "arabic": "فحص جودة الكتالوج",
+    "description": "Supply CSV text or product records and get per-record validation issues, normalized values and preserved originals.",
+    "url": "https://apify.com/abdulwhab95/catalog-product-data-quality-checker"
+  },
+  {
+    "name": "dataset-change-detector",
+    "title": "Dataset Change Detector — Prices, Stock & Records",
+    "category": "Data quality",
+    "arabic": "مقارنة البيانات",
+    "description": "Supply previous and current JSON snapshots and get NEW, UPDATED or optional REMOVED events with before/after values.",
+    "url": "https://apify.com/abdulwhab95/dataset-change-detector"
+  },
+  {
+    "name": "building-permits-multi-city",
+    "title": "Building Permits Scraper - Multi-City Construction Leads",
+    "category": "Business opportunities",
+    "arabic": "تصاريح البناء",
+    "description": "Select city open-data sources and export building permits with dates, types and declared values.",
+    "url": "https://apify.com/abdulwhab95/building-permits-multi-city"
+  },
+  {
+    "name": "mostaql-projects-monitor",
+    "title": "Mostaql Projects Monitor",
+    "category": "Business opportunities",
+    "arabic": "مشاريع مستقل",
+    "description": "Read public Mostaql project listings and export titles, skills, budgets and project links.",
+    "url": "https://apify.com/abdulwhab95/mostaql-projects-monitor"
+  },
+  {
+    "name": "development-tenders-monitor",
+    "title": "Development Project Tenders & Procurement Notices Monitor",
+    "category": "Business opportunities",
+    "arabic": "مناقصات البنك الدولي",
+    "description": "Filter World Bank procurement notices by country, time or keyword and export titles, notice types, deadlines and source links.",
+    "url": "https://apify.com/abdulwhab95/development-tenders-monitor"
+  },
+  {
+    "name": "public-ats-jobs-change-feed",
+    "title": "ATS Job Feed — Greenhouse, Lever & Ashby Changes",
+    "category": "Business opportunities",
+    "arabic": "وظائف ATS",
+    "description": "Give public Greenhouse, Lever or Ashby board identifiers and export jobs in a common schema.",
+    "url": "https://apify.com/abdulwhab95/public-ats-jobs-change-feed"
+  },
+  {
+    "name": "website-markdown-change-feed",
+    "title": "Website to Markdown — RAG Content & Change Feed",
+    "category": "Web and documents",
+    "arabic": "المواقع إلى Markdown",
+    "description": "Give public page URLs and export clean Markdown with content hashes and source URLs for document or RAG pipelines.",
+    "url": "https://apify.com/abdulwhab95/website-markdown-change-feed"
+  },
+  {
+    "name": "website-seo-broken-link-audit",
+    "title": "Website SEO & Broken Link Audit",
+    "category": "Web and documents",
+    "arabic": "فحص SEO والروابط",
+    "description": "Give public page URLs and get title, heading and metadata diagnostics plus a bounded set of link checks.",
+    "url": "https://apify.com/abdulwhab95/website-seo-broken-link-audit"
+  },
+  {
+    "name": "product-jsonld-schema-auditor",
+    "title": "Product JSON-LD & Structured Data Auditor",
+    "category": "Web and documents",
+    "arabic": "فحص JSON-LD",
+    "description": "Give product page URLs and get JSON-LD syntax and Product offer diagnostics with structured issue codes.",
+    "url": "https://apify.com/abdulwhab95/product-jsonld-schema-auditor"
+  },
+  {
+    "name": "pdf-tables-text-to-json-csv",
+    "title": "PDF Tables & Text to JSON and CSV",
+    "category": "Web and documents",
+    "arabic": "جداول ونصوص PDF",
+    "description": "Give public text-based PDF URLs and export page text, table arrays and CSV strings.",
+    "url": "https://apify.com/abdulwhab95/pdf-tables-text-to-json-csv"
+  },
+  {
+    "name": "static-website-visual-change-monitor",
+    "title": "Website Screenshots & Visual Changes — Static HTML",
+    "category": "Web and documents",
+    "arabic": "صور صفحات المواقع",
+    "description": "Give static page URLs and viewport dimensions to capture screenshots and compare later captures against a saved baseline.",
+    "url": "https://apify.com/abdulwhab95/static-website-visual-change-monitor"
+  },
+  {
+    "name": "rss-atom-new-items-feed",
+    "title": "RSS & Atom Feed Aggregator — New or Updated Items",
+    "category": "Web and documents",
+    "arabic": "تغذيات RSS وAtom",
+    "description": "Give RSS or Atom feed URLs and export deduplicated items with titles, dates and links.",
+    "url": "https://apify.com/abdulwhab95/rss-atom-new-items-feed"
+  },
+  {
+    "name": "github-release-change-monitor",
+    "title": "GitHub Release Monitor — Versions & Asset Downloads",
+    "category": "Developer and research",
+    "arabic": "إصدارات GitHub",
+    "description": "Give public owner/repository names and export release tags, dates and asset download counts.",
+    "url": "https://apify.com/abdulwhab95/github-release-change-monitor"
+  },
+  {
+    "name": "npm-package-version-download-monitor",
+    "title": "npm Package Monitor — Versions, Downloads & Deprecation",
+    "category": "Developer and research",
+    "arabic": "إصدارات وتحميلات npm",
+    "description": "Give npm package names and export versions, weekly download counts, licenses and deprecation metadata.",
+    "url": "https://apify.com/abdulwhab95/npm-package-version-download-monitor"
+  },
+  {
+    "name": "hacker-news-topic-change-monitor",
+    "title": "Hacker News Topic Monitor — Stories & Engagement",
+    "category": "Developer and research",
+    "arabic": "مواضيع Hacker News",
+    "description": "Give a keyword and export matching Hacker News stories, links, points and comment counts.",
+    "url": "https://apify.com/abdulwhab95/hacker-news-topic-change-monitor"
+  },
+  {
+    "name": "crossref-research-doi-monitor",
+    "title": "Crossref Research Monitor — DOI, Journals & Citations",
+    "category": "Developer and research",
+    "arabic": "أبحاث Crossref",
+    "description": "Give a research query and export DOI metadata, publication titles, dates and citation counts.",
+    "url": "https://apify.com/abdulwhab95/crossref-research-doi-monitor"
+  },
+  {
+    "name": "world-bank-country-indicator-monitor",
+    "title": "World Bank Indicators — Country Data & Revisions",
+    "category": "Developer and research",
+    "arabic": "مؤشرات البنك الدولي",
+    "description": "Give country and indicator codes plus years and export annual values with source attribution.",
+    "url": "https://apify.com/abdulwhab95/world-bank-country-indicator-monitor"
+  }
+]

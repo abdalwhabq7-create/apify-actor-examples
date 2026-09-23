@@ -1,0 +1,10 @@
+{
+  "query": "automation",
+  "sortBy": "relevance",
+  "maxResults": 3,
+  "maxPages": 1,
+  "minPoints": 0,
+  "minComments": 0,
+  "maxRequests": 100,
+  "onlyChanges": false
+}

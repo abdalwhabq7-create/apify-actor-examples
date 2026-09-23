@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://docs.python.org/3/library/json.html"
+  ],
+  "maxResults": 1,
+  "maxPages": 1,
+  "crawlLinks": false,
+  "onlyChanges": false,
+  "maxRequests": 100
+}

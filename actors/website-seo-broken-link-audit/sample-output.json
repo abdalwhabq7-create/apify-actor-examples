@@ -1,0 +1,9 @@
+[
+  {
+    "url": "https://example.com",
+    "httpStatus": 200,
+    "title": "Example Domain",
+    "h1Count": 1,
+    "missingAltCount": 0
+  }
+]

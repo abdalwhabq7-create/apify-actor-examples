@@ -1,0 +1,8 @@
+{
+  "feedUrls": [
+    "https://feeds.bbci.co.uk/news/rss.xml"
+  ],
+  "maxResults": 3,
+  "onlyChanges": false,
+  "maxRequests": 100
+}

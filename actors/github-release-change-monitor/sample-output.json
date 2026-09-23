@@ -1,0 +1,16 @@
+[
+  {
+    "repository": "psf/requests",
+    "tag": "v2.34.2",
+    "publishedAt": "2026-05-14T19:27:15Z",
+    "totalAssetDownloads": 959,
+    "url": "https://github.com/psf/requests/releases/tag/v2.34.2"
+  },
+  {
+    "repository": "psf/requests",
+    "tag": "v2.34.1",
+    "publishedAt": "2026-05-13T19:23:51Z",
+    "totalAssetDownloads": 129,
+    "url": "https://github.com/psf/requests/releases/tag/v2.34.1"
+  }
+]

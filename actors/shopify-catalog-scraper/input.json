@@ -1,0 +1,10 @@
+{
+  "storeDomains": [
+    "allbirds.com"
+  ],
+  "maxProductsPerStore": 3,
+  "onlyChanges": false,
+  "rowsPerVariant": true,
+  "respectRobots": true,
+  "requestDelayMs": 400
+}

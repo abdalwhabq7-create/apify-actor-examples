@@ -1,0 +1,14 @@
+[
+  {
+    "event": "UPDATED",
+    "key": {
+      "id": "SKU-1"
+    }
+  },
+  {
+    "event": "NEW",
+    "key": {
+      "id": "SKU-3"
+    }
+  }
+]

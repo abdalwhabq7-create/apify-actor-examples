@@ -1,0 +1,16 @@
+[
+  {
+    "source": "data.cityofchicago.org",
+    "permitNumber": "101070559",
+    "permitType": "PERMIT - SIGNS",
+    "issuedAt": "2026-09-22T00:00:00.000",
+    "declaredValue": 4500
+  },
+  {
+    "source": "data.cityofchicago.org",
+    "permitNumber": "101079857",
+    "permitType": "PERMIT - RENOVATION/ALTERATION",
+    "issuedAt": "2026-09-22T00:00:00.000",
+    "declaredValue": 250000
+  }
+]

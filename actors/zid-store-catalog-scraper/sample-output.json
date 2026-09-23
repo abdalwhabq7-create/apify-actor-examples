@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Bella Jumpsuit",
+    "price": 850,
+    "currency": "SAR",
+    "isAvailable": true,
+    "productUrl": "https://oav.zid.store/products/bella-jumpsuit"
+  },
+  {
+    "name": "Nia set |Two pieces",
+    "price": 815,
+    "currency": "SAR",
+    "isAvailable": true,
+    "productUrl": "https://oav.zid.store/products/nia-set"
+  }
+]

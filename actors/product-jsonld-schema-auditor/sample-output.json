@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://oav.zid.store/products/jade",
+    "validJsonLd": true,
+    "scriptCount": 3,
+    "entityCount": 4,
+    "types": [
+      "BreadcrumbList",
+      "Organization",
+      "Product",
+      "WebSite"
+    ]
+  }
+]

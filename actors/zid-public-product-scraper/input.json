@@ -1,0 +1,9 @@
+{
+  "urls": [
+    "https://oav.zid.store/products/jade"
+  ],
+  "discoverProducts": false,
+  "maxPages": 3,
+  "maxResults": 3,
+  "maxRequests": 100
+}

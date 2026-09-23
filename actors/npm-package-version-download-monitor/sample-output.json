@@ -1,0 +1,16 @@
+[
+  {
+    "name": "express",
+    "version": "5.2.1",
+    "weeklyDownloads": 101489586,
+    "license": "MIT",
+    "url": "https://www.npmjs.com/package/express"
+  },
+  {
+    "name": "apify",
+    "version": "3.7.2",
+    "weeklyDownloads": 38619,
+    "license": "Apache-2.0",
+    "url": "https://www.npmjs.com/package/apify"
+  }
+]

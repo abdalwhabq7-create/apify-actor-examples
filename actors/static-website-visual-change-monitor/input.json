@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://example.com"
+  ],
+  "width": 1280,
+  "height": 800,
+  "maxResults": 3,
+  "pixelThreshold": 20,
+  "maxRequests": 100
+}

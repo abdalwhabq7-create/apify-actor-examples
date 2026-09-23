@@ -1,0 +1,15 @@
+{
+  "countries": [
+    "KW"
+  ],
+  "indicators": [
+    "NY.GDP.MKTP.CD"
+  ],
+  "startYear": 2023,
+  "endYear": 2024,
+  "maxResults": 3,
+  "maxPages": 1,
+  "onlyChanges": false,
+  "includeMissing": false,
+  "maxRequests": 100
+}

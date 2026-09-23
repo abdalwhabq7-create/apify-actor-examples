@@ -1,0 +1,12 @@
+{
+  "boards": [
+    {
+      "provider": "greenhouse",
+      "board": "greenhouse"
+    }
+  ],
+  "maxResults": 3,
+  "includeDescriptions": true,
+  "onlyChanges": false,
+  "maxRequests": 100
+}

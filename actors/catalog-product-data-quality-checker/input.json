@@ -1,0 +1,15 @@
+{
+  "records": [
+    {
+      "Name": "Example",
+      "SKU": "A",
+      "Regular price": "12",
+      "Sale price": "9"
+    }
+  ],
+  "columnPreset": "woocommerce",
+  "maxResults": 1,
+  "delimiter": ",",
+  "decimalSeparator": ".",
+  "maxRequests": 100
+}

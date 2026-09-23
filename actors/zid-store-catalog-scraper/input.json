@@ -1,0 +1,8 @@
+{
+  "stores": [
+    "oav.zid.store"
+  ],
+  "maxProductsPerStore": 3,
+  "onlyChanges": false,
+  "onlyOnSale": false
+}

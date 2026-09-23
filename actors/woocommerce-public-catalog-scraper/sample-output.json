@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Blacephalon",
+    "price": 149,
+    "currency": "GBP",
+    "inStock": true,
+    "url": "https://scrapeme.live/shop/Blacephalon/"
+  },
+  {
+    "name": "Stakataka",
+    "price": 190,
+    "currency": "GBP",
+    "inStock": true,
+    "url": "https://scrapeme.live/shop/Stakataka/"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "repositories": [
+    "psf/requests"
+  ],
+  "maxResults": 3,
+  "maxPages": 1,
+  "includePrereleases": false,
+  "maxRequests": 100,
+  "onlyChanges": false
+}

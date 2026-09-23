@@ -1,0 +1,13 @@
+{
+  "sources": [
+    "data.cityofchicago.org"
+  ],
+  "maxCities": 1,
+  "maxPermitsPerCity": 3,
+  "minDeclaredValue": 1,
+  "query": "building permits",
+  "issuedSince": "",
+  "permitTypes": [],
+  "requestDelayMs": 300,
+  "onlyNew": false
+}

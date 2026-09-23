@@ -1,0 +1,7 @@
+{
+  "countryCodes": [],
+  "daysBack": 30,
+  "maxResults": 3,
+  "onlyNew": false,
+  "includeDescription": true
+}

@@ -1,0 +1,9 @@
+{
+  "platforms": [
+    "salla"
+  ],
+  "maxAppsPerPlatform": 3,
+  "includeCategories": false,
+  "language": "en",
+  "onlyChanges": false
+}

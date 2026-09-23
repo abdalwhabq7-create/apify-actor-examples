@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://www.irs.gov/pub/irs-pdf/f1040.pdf"
+  ],
+  "startPage": 2,
+  "maxPagesPerPdf": 1,
+  "maxResults": 1,
+  "tableStrategy": "lines",
+  "maxRequests": 100
+}

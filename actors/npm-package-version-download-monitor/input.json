@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "express",
+    "apify"
+  ],
+  "maxResults": 3,
+  "maxRequests": 100,
+  "onlyChanges": false
+}

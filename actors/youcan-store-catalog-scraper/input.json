@@ -1,0 +1,10 @@
+{
+  "stores": [
+    "https://youcan.supply"
+  ],
+  "maxProductsPerStore": 1,
+  "onlyOnSale": false,
+  "includeVariants": false,
+  "includeVariantStock": false,
+  "onlyChanges": false
+}

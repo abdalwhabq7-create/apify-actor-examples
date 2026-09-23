@@ -1,0 +1,9 @@
+{
+  "urls": [
+    "https://example.com"
+  ],
+  "checkLinks": true,
+  "maxLinksPerPage": 5,
+  "maxResults": 3,
+  "maxRequests": 100
+}
