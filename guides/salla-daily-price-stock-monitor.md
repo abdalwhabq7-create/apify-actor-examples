@@ -55,6 +55,17 @@ A successful capped sample can merge the products it checked into saved state. A
 
 The report's `verdict` can say `NO DATA - zero rows produced` on a quiet changed-only run. Interpret it together with the status and coverage fields above; it does not by itself establish a source failure.
 
+### Two-run check on 7 October 2026
+
+We ran the three-product monitor twice with build `0.1.9`, the same store and a separate test state name. [Selected run evidence](monitor-checks-20261007.json):
+
+| Check time (UTC) | Run ID | Products checked | Rows returned |
+|---|---|---:|---:|
+| 2026-10-06 23:13:32 | `LodNkPQlfV2xOmPJF` | 3 | 3, all `NEW` |
+| 2026-10-06 23:13:52 | `0oW3Xfc1JhrUsDNZJ` | 3 | 0 |
+
+Both runs succeeded, resolved the store, reported zero skipped or duplicate products, and did not stop at a spending limit. Both had `exhaustiveRead: false`. This confirms that the sampled baseline persisted and unchanged sampled products were not returned again. It does not test a real price change, a removed product or full-catalog coverage. The dates above are UTC; these checks occurred on 7 October in Kuwait.
+
 ## 3. Turn the sample into a daily task
 
 1. Choose the stores and coverage you actually need. Increase `maxProductsPerStore` only after reviewing their sizes, run time and price. The input accepts up to 6,000 products per store. Check `exhaustiveRead` rather than assuming a large limit means full coverage.
@@ -69,14 +80,14 @@ These steps follow Apify's [task guide](https://docs.apify.com/actors/running/ta
 
 In the run's Dataset, export CSV or JSON. Start with `productId`, `productUrl`, `name`, `price`, `regularPrice`, `currency`, `isAvailable`, `isOutOfStock`, `changeType`, `changedFields` and `previousValues`. JSON preserves nested previous values; a spreadsheet is useful for reviewing prices.
 
-For an output-shape example, the existing [verified sample](../actors/salla-catalog-scraper/sample-output.json) contains these real rows from **23 September 2026**, run `kYIFgUru6yeHEShlZ`, build `0.1.8`:
+The [latest small sample](salla-sample-20261007.json) was checked **7 October 2026 in Kuwait** (`2026-10-06T23:09:59.924Z`), run `UNnqswydfejTDG2nh`, build `0.1.9`. It returned five products from `salla.sa/coffee_souq` with `maxProductsPerStore: 5` and `onlyChanges: false`:
 
-| Product URL | Price | Currency | Available |
-|---|---:|---|---|
-| https://coffeesouq1.com/oZOQwNv | 41.74 | SAR | true |
-| https://coffeesouq1.com/qGYYvqZ | 125 | SAR | true |
+| Product ID | Product URL | Price | Currency | Available |
+|---|---|---:|---|---|
+| 1589226865 | https://coffeesouq1.com/QzqVKzw | 60 | SAR | true |
+| 1301644920 | https://coffeesouq1.com/YzPVloE | 30 | SAR | true |
 
-That historical run used `onlyChanges: false`, read three products from each of two stores and returned six rows. It demonstrates output shape, not today's prices, full coverage or a verified change between two monitoring runs.
+Its report recorded no unresolved stores, skipped products or duplicate products, and `exhaustiveRead: false`. These rows demonstrate a successful bounded read and the output shape, not full coverage or a verified change between two monitoring runs. Prices and availability can change after the recorded check.
 
 ## Optional: report products missing from the catalog
 

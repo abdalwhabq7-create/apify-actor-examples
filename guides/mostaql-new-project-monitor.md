@@ -77,4 +77,28 @@ Run it from the repository root. The client downloads the complete returned rows
 
 The tool does not submit proposals or contact clients. Review and respond through Mostaql's own workflow and current rules.
 
+## Verified small read
+
+Run `TFvxneMCWmYxpoD2a`, build `0.1.3`, was checked **7 October 2026 in Kuwait** (`2026-10-06T23:10:01.516Z`). With `maxProjects: 5`, `maxPages: 1`, empty keywords and `onlyNew: false`, it returned five projects. Its report recorded zero unreadable projects or failed listing pages and `stoppedAtMaxProjects: true`.
+
+The [selected metadata excerpt](mostaql-sample-20261007.json) contains only identifiers, links, stated budget limits and publication dates. Two rows from that actual result:
+
+| Project ID | Original project | Stated budget (USD) | Published (UTC) |
+|---|---|---:|---|
+| 1283464 | https://mostaql.com/project/1283464 | 50–100 | 2026-10-06T21:43:13Z |
+| 1283461 | https://mostaql.com/project/1283461 | 100–250 | 2026-10-06T21:41:49Z |
+
+This was a bounded read, not a proof of full coverage, current availability or deduplication across runs. The budgets are source-stated ranges, not promised earnings.
+
+### Two-run check of unseen IDs
+
+We also tested `onlyNew: true` twice using build `0.1.3`, the same test state name, no filters and one listing page. **These checks used `maxProjects: 5`; the downloadable introductory example above uses 3.** [Selected run evidence](monitor-checks-20261007.json):
+
+| Check time (UTC) | Run ID | Rows returned | Already seen | Remembered IDs |
+|---|---|---:|---:|---:|
+| 2026-10-06 23:13:38 | `FyrtlxmhcRykt1a1S` | 5 | 0 | 5 |
+| 2026-10-06 23:14:18 | `idQhh5h5GkOQciZvV` | 5 | 5 | 10 |
+
+Both runs succeeded without failed or unreadable pages, blocked requests or a spending-limit stop. The second result contained five different IDs: **older, previously unseen projects from the same listing page**, not five projects newly posted between the checks. This demonstrates deduplication and backfill with a return cap. It does not verify ongoing project availability or edit detection. These UTC timestamps correspond to 7 October in Kuwait.
+
 [Actor reference and dated output example](../actors/mostaql-projects-monitor/README.md) · [All examples](../README.md)

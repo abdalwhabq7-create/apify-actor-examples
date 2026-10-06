@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-06T23:09:59.924Z",
+  "runId": "UNnqswydfejTDG2nh",
+  "build": "0.1.9",
+  "rowCount": 5,
+  "rows": [
+    {
+      "productId": "1589226865",
+      "productUrl": "https://coffeesouq1.com/QzqVKzw",
+      "price": 60,
+      "currency": "SAR",
+      "isAvailable": true
+    },
+    {
+      "productId": "1301644920",
+      "productUrl": "https://coffeesouq1.com/YzPVloE",
+      "price": 30,
+      "currency": "SAR",
+      "isAvailable": true
+    },
+    {
+      "productId": "1589303687",
+      "productUrl": "https://coffeesouq1.com/AznrbeQ",
+      "price": 60,
+      "currency": "SAR",
+      "isAvailable": true
+    },
+    {
+      "productId": "1224984915",
+      "productUrl": "https://coffeesouq1.com/AzOpArG",
+      "price": 49,
+      "currency": "SAR",
+      "isAvailable": true
+    },
+    {
+      "productId": "425432753",
+      "productUrl": "https://coffeesouq1.com/pQgdlBj",
+      "price": 60,
+      "currency": "SAR",
+      "isAvailable": true
+    }
+  ]
+}
