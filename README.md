@@ -9,6 +9,7 @@ Maintained by the developer of these Actors. The examples run the hosted tools o
 ## Practical guides
 
 - [Monitor Salla prices and stock daily](guides/salla-daily-price-stock-monitor.md): save a baseline, interpret changed-only output, and set up a scheduled task with a cost limit.
+- [Build a shortlist of unseen Mostaql projects](guides/mostaql-new-project-monitor.md): filter opportunities, understand first-run backfill, and export project links, budgets and dates for review.
 
 ## Choose a tool
 
