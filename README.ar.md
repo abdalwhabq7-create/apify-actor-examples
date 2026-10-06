@@ -4,6 +4,10 @@
 
 [English and Python setup](README.md) · [متجر الأدوات](https://apify.com/abdulwhab95)
 
+## دليل عملي
+
+[مراقبة أسعار ومخزون سلة يومياً — بالإنجليزية](guides/salla-daily-price-stock-monitor.md): مثال صغير، حفظ حالة المقارنة، فهم نتيجة «ما تغير شي»، ثم إعداد مهمة يومية بحد تكلفة تختاره.
+
 | الأداة | الشرح والمثال |
 |---|---|
 | منتجات سلة | [افتح المثال](actors/salla-catalog-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/salla-catalog-scraper) |

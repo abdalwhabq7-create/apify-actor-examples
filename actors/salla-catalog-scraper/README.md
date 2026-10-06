@@ -6,6 +6,8 @@ Give a Salla store URL and export product prices, availability and identifiers. 
 
 **[Open the Actor on Apify](https://apify.com/abdulwhab95/salla-catalog-scraper) · [All tools](../../README.md) · منتجات سلة**
 
+**[Practical guide: monitor prices and stock daily](../../guides/salla-daily-price-stock-monitor.md)** — keep a baseline, understand empty change output, and schedule a tested configuration.
+
 ## Try it without code
 
 Open the Actor, sign in to Apify, paste the JSON below into the input editor and review the current price before running. Download results from the run's Dataset as JSON or CSV.

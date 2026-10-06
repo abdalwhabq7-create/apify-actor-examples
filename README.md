@@ -6,6 +6,10 @@
 
 Maintained by the developer of these Actors. The examples run the hosted tools on Apify; this repository contains client examples and documentation, not the private Actor implementations.
 
+## Practical guides
+
+- [Monitor Salla prices and stock daily](guides/salla-daily-price-stock-monitor.md): save a baseline, interpret changed-only output, and set up a scheduled task with a cost limit.
+
 ## Choose a tool
 
 ### Commerce

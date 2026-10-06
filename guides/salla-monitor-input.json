@@ -1,0 +1,11 @@
+{
+  "stores": ["salla.sa/coffee_souq"],
+  "maxProductsPerStore": 3,
+  "onlyChanges": true,
+  "stateStoreName": "my-salla-monitor-demo",
+  "onlyOnSale": false,
+  "emitRemoved": false,
+  "includeEndedDiscounts": false,
+  "requestDelayMs": 200,
+  "respectRobots": true
+}
