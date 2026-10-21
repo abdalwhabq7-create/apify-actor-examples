@@ -1,0 +1,22 @@
+{
+  "payload": {
+    "before": {
+      "openapi": "3.1.0",
+      "paths": {
+        "/items": {
+          "get": {
+            "responses": {
+              "200": {
+                "description": "OK"
+              }
+            }
+          }
+        }
+      }
+    },
+    "after": {
+      "openapi": "3.1.0",
+      "paths": {}
+    }
+  }
+}

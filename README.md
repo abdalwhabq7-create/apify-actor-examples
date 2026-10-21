@@ -1,6 +1,22 @@
 # Apify Actor examples — catalogs, monitoring and data extraction
 
-**24 hosted data tools. Pick a task, inspect a real output sample, and run a small example.**
+**30 hosted data tools. Pick a task, check its verification notes, and run a small example.**
+
+## October 2026 update
+
+Five new bounded utilities are published, each verified with synthetic data on Apify build 1.0.2. The catalog also adds a previously omitted existing jobs Actor; that example is explicitly marked not freshly executed. All existing public tool guides now link to the improved client result checks.
+
+| New tool | Purpose |
+|---|---|
+| [Sitemap Snapshot Diff — Added URLs and Lastmod Changes](actors/sitemap-snapshot-change-feed/README.md) | undefined |
+| [HTTP Security Headers — Presence Audit](actors/http-security-header-presence-audit/README.md) | undefined |
+| [OpenAPI Structural Change Checker — Review Feed](actors/openapi-structural-change-checker/README.md) | undefined |
+| [CSV and JSON Deduplicator — Trim and Keep First](actors/csv-json-deduplicate-normalize/README.md) | undefined |
+| [Static HTML Tables to JSON — Bounded Extraction](actors/static-html-tables-to-json/README.md) | undefined |
+
+Existing tool added to the catalog: [Greenhouse, Lever & Ashby Jobs API](actors/greenhouse-lever-ashby-jobs/README.md).
+
+The runner saves a sibling `.report.json`, warns when data quality is partial or unverified, and flags its 1,000-row download cap. See [result verification](guides/result-verification.md). This release does not claim all old hosted runtimes were rewritten.
 
 [جميع الأدوات بالعربي](README.ar.md) · [Apify Store](https://apify.com/abdulwhab95)
 
@@ -105,7 +121,7 @@ Inputs are deliberately small and change-only modes are disabled for first-run e
 
 ## Verification
 
-All 24 examples were executed against the published Actors. Verification window (UTC): 2026-09-23T21:53:03.613Z to 2026-09-23T21:56:07.637Z. Each page records its actual run timestamp and build. Samples demonstrate output shape; they do not establish full source coverage, guaranteed uptime, or future results. Dataset comparison and catalog validation use explicitly synthetic input fixtures.
+The original 24 examples were executed against the published Actors. Historical verification window (UTC): 2026-09-23T21:53:03.613Z to 2026-09-23T21:56:07.637Z. Five new utilities were verified separately on 2026-10-21. The additional existing jobs listing is not a fresh test. Each tested page records its verification notes. Samples demonstrate output shape; they do not establish full source coverage, guaranteed uptime, or future results. Dataset comparison and catalog validation use explicitly synthetic input fixtures.
 
 Third-party text excerpts are limited to short identifying metadata. Source datasets, artwork and trademarks retain their own rights. Check the Actor and original source for licenses and attribution.
 

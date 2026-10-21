@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/items",
+    "method": "GET",
+    "code": "OPERATION_REMOVED",
+    "detail": "Previously declared operation is absent"
+  }
+]

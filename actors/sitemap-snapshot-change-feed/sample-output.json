@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://example.com/new",
+    "changeType": "ADDED",
+    "previousLastmod": null,
+    "lastmod": "2026-10-21"
+  },
+  {
+    "url": "https://example.com/old",
+    "changeType": "REMOVED",
+    "previousLastmod": null,
+    "lastmod": null
+  }
+]

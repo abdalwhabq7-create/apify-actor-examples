@@ -1,0 +1,14 @@
+[
+  {
+    "tableIndex": 0,
+    "rowIndex": 1,
+    "headers": [
+      "Product",
+      "Price"
+    ],
+    "cells": [
+      "Sample A",
+      "12.50"
+    ]
+  }
+]

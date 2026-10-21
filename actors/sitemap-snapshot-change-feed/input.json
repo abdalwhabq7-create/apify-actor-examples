@@ -1,0 +1,7 @@
+{
+  "payload": {
+    "currentXml": "<urlset><url><loc>https://example.com/new</loc><lastmod>2026-10-21</lastmod></url></urlset>",
+    "previousXml": "<urlset><url><loc>https://example.com/old</loc></url></urlset>",
+    "snapshotsComplete": true
+  }
+}

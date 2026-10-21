@@ -1,0 +1,8 @@
+{
+  "payload": {
+    "csvText": "sku,name\n A1 , Item \nA1,Duplicate\nB2,Second\n",
+    "keyFields": [
+      "sku"
+    ]
+  }
+}

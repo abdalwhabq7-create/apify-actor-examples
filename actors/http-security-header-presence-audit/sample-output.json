@@ -1,0 +1,32 @@
+[
+  {
+    "header": "strict-transport-security",
+    "status": "MISSING",
+    "value": null
+  },
+  {
+    "header": "content-security-policy",
+    "status": "MISSING",
+    "value": null
+  },
+  {
+    "header": "x-content-type-options",
+    "status": "PRESENT",
+    "value": "nosniff"
+  },
+  {
+    "header": "x-frame-options",
+    "status": "MISSING",
+    "value": null
+  },
+  {
+    "header": "referrer-policy",
+    "status": "PRESENT",
+    "value": "strict-origin-when-cross-origin"
+  },
+  {
+    "header": "permissions-policy",
+    "status": "MISSING",
+    "value": null
+  }
+]

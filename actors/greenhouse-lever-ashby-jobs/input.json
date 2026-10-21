@@ -1,0 +1,7 @@
+{
+  "companies": [
+    "https://job-boards.greenhouse.io/stripe"
+  ],
+  "includeDescription": false,
+  "maxJobsPerCompany": 3
+}

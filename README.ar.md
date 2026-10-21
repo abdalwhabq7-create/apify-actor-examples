@@ -1,6 +1,22 @@
 # أدوات جمع البيانات والمراقبة على Apify
 
-٢٤ أداة عامة، مع مثال إدخال صغير ونتيجة تشغيل حقيقية لكل أداة.
+٣٠ أداة عامة: ٢٥ أداة سابقة و٥ أدوات جديدة. كل مثال يوضّح حدود التحقق منه؛ إضافة أداة الوظائف القديمة للفهرس ليست اختبار تشغيل جديدًا.
+
+## تحديث أكتوبر ٢٠٢٦
+
+تم نشر واختبار الأدوات الخمس الجديدة ببيانات تجريبية على Apify. مشغّل Python صار يحفظ تقريرًا منفصلًا، وينبّهك إذا النتيجة جزئية أو غير متحققة أو وصل التنزيل إلى سقف ١٬٠٠٠ صف. هذا تطوير للمشغّل والأدلة، وليس ادعاءً بتغيير كود جميع الأدوات القديمة.
+
+- [تغييرات خريطة الموقع](actors/sitemap-snapshot-change-feed/README.md)
+
+- [فحص وجود ترويسات الأمان](actors/http-security-header-presence-audit/README.md)
+
+- [فحص تغييرات OpenAPI](actors/openapi-structural-change-checker/README.md)
+
+- [تنظيف وإزالة تكرار CSV وJSON](actors/csv-json-deduplicate-normalize/README.md)
+
+- [جداول HTML إلى JSON](actors/static-html-tables-to-json/README.md)
+
+- [وظائف الشركات من أنظمة التوظيف](actors/greenhouse-lever-ashby-jobs/README.md)
 
 [English and Python setup](README.md) · [متجر الأدوات](https://apify.com/abdulwhab95)
 

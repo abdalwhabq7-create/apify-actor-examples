@@ -190,5 +190,48 @@
     "arabic": "مؤشرات البنك الدولي",
     "description": "Give country and indicator codes plus years and export annual values with source attribution.",
     "url": "https://apify.com/abdulwhab95/world-bank-country-indicator-monitor"
+  },
+  {
+    "name": "sitemap-snapshot-change-feed",
+    "title": "Sitemap Snapshot Diff — Added URLs and Lastmod Changes",
+    "category": "Developer and data utilities",
+    "arabic": "تغييرات خريطة الموقع",
+    "url": "https://apify.com/abdulwhab95/sitemap-snapshot-change-feed"
+  },
+  {
+    "name": "http-security-header-presence-audit",
+    "title": "HTTP Security Headers — Presence Audit",
+    "category": "Developer and data utilities",
+    "arabic": "فحص وجود ترويسات الأمان",
+    "url": "https://apify.com/abdulwhab95/http-security-header-presence-audit"
+  },
+  {
+    "name": "openapi-structural-change-checker",
+    "title": "OpenAPI Structural Change Checker — Review Feed",
+    "category": "Developer and data utilities",
+    "arabic": "فحص تغييرات OpenAPI",
+    "url": "https://apify.com/abdulwhab95/openapi-structural-change-checker"
+  },
+  {
+    "name": "csv-json-deduplicate-normalize",
+    "title": "CSV and JSON Deduplicator — Trim and Keep First",
+    "category": "Developer and data utilities",
+    "arabic": "تنظيف وإزالة تكرار CSV وJSON",
+    "url": "https://apify.com/abdulwhab95/csv-json-deduplicate-normalize"
+  },
+  {
+    "name": "static-html-tables-to-json",
+    "title": "Static HTML Tables to JSON — Bounded Extraction",
+    "category": "Developer and data utilities",
+    "arabic": "جداول HTML إلى JSON",
+    "url": "https://apify.com/abdulwhab95/static-html-tables-to-json"
+  },
+  {
+    "name": "greenhouse-lever-ashby-jobs",
+    "title": "Greenhouse, Lever & Ashby Jobs API",
+    "category": "Business opportunities",
+    "arabic": "وظائف الشركات من أنظمة التوظيف",
+    "description": "Provide exact public job-board URLs and filter matching jobs; company-name guesses can be ambiguous.",
+    "url": "https://apify.com/abdulwhab95/greenhouse-lever-ashby-jobs"
   }
 ]

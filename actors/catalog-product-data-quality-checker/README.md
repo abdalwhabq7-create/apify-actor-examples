@@ -57,3 +57,7 @@ Diagnostic only: it does not repair your source catalog or certify compatibility
 The Actor and source may change after this sample. Refer to the [current Store listing](https://apify.com/abdulwhab95/catalog-product-data-quality-checker) for full input options and pricing, including any start fee. An Apify token is required for API use even where no source-site API key is required.
 
 Published by the tool's developer. Source names identify compatibility and data provenance, not endorsement. You are responsible for permitted use and source attribution. Sample third-party data retains its original rights.
+
+## Result checks (2026-10-21 client update)
+
+The shared Python runner now saves a separate run report and warns about partial/unknown quality and the 1,000-row download cap. See [result verification](../../guides/result-verification.md). This documentation/client update alone does not imply a new hosted implementation or a fresh live-source test.
