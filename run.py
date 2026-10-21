@@ -12,6 +12,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
+class ApiError(RuntimeError):
+    def __init__(self, status):
+        self.status=status
+        super().__init__(f'Apify HTTP {status}. Check your token, input and Actor listing; inspect Console before retrying.')
+
 def request(path, token, body=None, **params):
     url = 'https://api.apify.com/v2/' + path
     if params:
@@ -22,7 +27,7 @@ def request(path, token, body=None, **params):
         with urllib.request.urlopen(req, timeout=75) as response:
             data = json.load(response)
     except urllib.error.HTTPError as exc:
-        raise RuntimeError(f'Apify HTTP {exc.code}. Check your token, input and Actor listing; inspect Console before retrying.') from None
+        raise ApiError(exc.code) from None
     return data.get('data', data) if isinstance(data, dict) else data
 
 def run(name, inp, token, max_charge):
@@ -50,7 +55,21 @@ def run(name, inp, token, max_charge):
         if result['status']=='READY':time.sleep(1)
     if result['status']!='SUCCEEDED':
         raise RuntimeError(f"Run {run_id} ended with {result['status']}; inspect its log in Apify Console.")
+    report=None
+    if result.get('defaultKeyValueStoreId'):
+        try:
+            report=request('key-value-stores/'+result['defaultKeyValueStoreId']+'/records/RUN_REPORT',token)
+        except ApiError as exc:
+            if exc.status!=404:raise
+    result['runReport']=report
     rows=request('datasets/'+result['defaultDatasetId']+'/items',token,limit=1000,clean='true')
+    if not isinstance(rows,list):raise RuntimeError('Unexpected dataset response; inspect Console.')
+    quality=report.get('status','UNVERIFIED') if isinstance(report,dict) else 'UNVERIFIED'
+    result['downloadSummary']={'rows':len(rows),'limit':1000,'mayBeTruncated':len(rows)>=1000,'quality':quality}
+    if quality!='SUCCEEDED':
+        print(f'Warning: data quality status is {quality}; inspect the saved run report before downstream use.',file=sys.stderr)
+    if len(rows)>=1000:
+        print('Warning: download reached 1,000 rows and may be truncated. Export the full dataset in Console.',file=sys.stderr)
     return result,rows
 
 def main():
@@ -67,6 +86,9 @@ def main():
     folder=ROOT/'results';folder.mkdir(exist_ok=True)
     output=folder/(args.actor+'-'+result['id']+'.json')
     output.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    metadata=folder/(args.actor+'-'+result['id']+'.report.json')
+    metadata.write_text(json.dumps({'runId':result['id'],'platformStatus':result['status'],
+        'runReport':result.get('runReport'),'downloadSummary':result['downloadSummary']},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Saved {len(rows)} rows (up to 1,000; export larger datasets in Console) to {output}')
 
 if __name__=='__main__':

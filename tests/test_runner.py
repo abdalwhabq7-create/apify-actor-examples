@@ -4,6 +4,27 @@ from unittest.mock import patch
 import run
 
 class RunnerTests(unittest.TestCase):
+    def test_partial_report_is_saved_not_mistaken_for_complete_success(self):
+        responses=[{'id':'test','status':'SUCCEEDED','defaultDatasetId':'data','defaultKeyValueStoreId':'kv'},
+                   {'status':'PARTIAL','errors':[{'message':'source failed'}]}, [{'price':12}]]
+        with patch.object(run,'request',side_effect=responses):
+            result,rows=run.run('salla-catalog-scraper',{},'test-token',.10)
+        self.assertEqual(result['runReport']['status'],'PARTIAL')
+        self.assertEqual(result['downloadSummary']['quality'],'PARTIAL')
+        self.assertEqual(rows,[{'price':12}])
+
+    def test_missing_report_is_explicitly_unverified(self):
+        responses=[{'id':'test','status':'SUCCEEDED','defaultDatasetId':'data'}, []]
+        with patch.object(run,'request',side_effect=responses):
+            result,rows=run.run('salla-catalog-scraper',{},'test-token',.10)
+        self.assertEqual(result['downloadSummary']['quality'],'UNVERIFIED')
+
+    def test_dataset_page_limit_is_reported(self):
+        responses=[{'id':'test','status':'SUCCEEDED','defaultDatasetId':'data'}, [{}]*1000]
+        with patch.object(run,'request',side_effect=responses):
+            result,_=run.run('salla-catalog-scraper',{},'test-token',.10)
+        self.assertTrue(result['downloadSummary']['mayBeTruncated'])
+
     def test_successful_run_polls_and_downloads_without_restarting(self):
         responses=[{'id':'test','status':'RUNNING'}, {'id':'test','status':'SUCCEEDED','defaultDatasetId':'data'}, [{'price':12}]]
         with patch.object(run,'request',side_effect=responses) as api:
