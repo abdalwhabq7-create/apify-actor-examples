@@ -79,6 +79,18 @@ The tool does not submit proposals or contact clients. Review and respond throug
 
 ## Verified small read
 
+Fresh check on **3 November 2026 in Kuwait** (2 November UTC): run
+`wEfMlYUwyYROKpuH9`, build `0.1.6`, delivered five projects from one listing
+page with zero unreadable projects, failed pages or source blocks. It reached
+the requested five-project cap; this does not establish full source coverage.
+The input used empty filters, `maxProjects: 5`, `maxPages: 1` and `onlyNew: false`.
+
+At the listed $5 per 1,000 delivered projects, five rows have $0.025 in result
+event charges, plus the Actor Start event. Empty output has no result-event
+charge but may still incur a start charge. Check the current pricing tab and
+your account's maximum charge before running. The older measurements below
+remain historical evidence, not new production observations.
+
 Run `TFvxneMCWmYxpoD2a`, build `0.1.3`, was checked **7 October 2026 in Kuwait** (`2026-10-06T23:10:01.516Z`). With `maxProjects: 5`, `maxPages: 1`, empty keywords and `onlyNew: false`, it returned five projects. Its report recorded zero unreadable projects or failed listing pages and `stoppedAtMaxProjects: true`.
 
 The [selected metadata excerpt](mostaql-sample-20261007.json) contains only identifiers, links, stated budget limits and publication dates. Two rows from that actual result:

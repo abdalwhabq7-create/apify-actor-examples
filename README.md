@@ -2,6 +2,12 @@
 
 **30 hosted data tools. Pick a task, check its verification notes, and run a small example.**
 
+## November 2026 monitoring update
+
+Fresh bounded checks on 3 November returned five Mostaql projects and ten Salla/Zid app listings with no reported source errors. Start with the [Mostaql guide](guides/mostaql-new-project-monitor.md) or [app-market guide](guides/salla-zid-app-market-monitor.md); neither sample establishes complete marketplace coverage.
+
+The new [complete Salla snapshot comparison helper](guides/salla-verified-snapshot-comparison.md) checks coverage before preparing a comparison. Its offline checks pass; live catalog samples that hit the product limit were rejected, so a live complete-catalog comparison is not claimed.
+
 ## October 2026 update
 
 Five new bounded utilities are published, each verified with synthetic data on Apify build 1.0.2. The catalog also adds a previously omitted existing jobs Actor; that example is explicitly marked not freshly executed. All existing public tool guides now link to the improved client result checks.
@@ -24,6 +30,7 @@ Maintained by the developer of these Actors. The examples run the hosted tools o
 
 ## Practical guides
 
+- [Track Salla and Zid app listings, ratings and displayed prices](guides/salla-zid-app-market-monitor.md): try ten rows, keep a stable tracking scope, and understand unknown currencies and quiet runs.
 - [Track Salla and Zid app marketplaces](actors/salla-zid-app-store-tracker/README.md): try a small app-directory example with names, ratings and published pricing fields.
 - [Monitor Salla prices and stock daily](guides/salla-daily-price-stock-monitor.md): save a baseline, interpret changed-only output, and set up a scheduled task with a cost limit.
 - [Build a shortlist of unseen Mostaql projects](guides/mostaql-new-project-monitor.md): filter opportunities, understand first-run backfill, and export project links, budgets and dates for review.

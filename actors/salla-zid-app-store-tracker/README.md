@@ -47,6 +47,8 @@ Verified 2026-09-23T21:53:25.617Z UTC, build `0.1.3`, run `N2F2CY4qyUPKpsnq9`. 3
 
 ## Limits and pricing
 
+For a larger repeatable workflow, follow the [app-market monitoring guide](../../guides/salla-zid-app-market-monitor.md). It distinguishes app listings from merchant product catalogs and explains state, small first runs and unknown currencies.
+
 Directory pages and pricing text can change. Not every app exposes a numeric price or rating.
 
 The Actor and source may change after this sample. Refer to the [current Store listing](https://apify.com/abdulwhab95/salla-zid-app-store-tracker) for full input options and pricing, including any start fee. An Apify token is required for API use even where no source-site API key is required.

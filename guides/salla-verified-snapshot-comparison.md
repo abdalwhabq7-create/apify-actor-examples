@@ -52,6 +52,8 @@ No saved baseline, schedule, notification or store-price modification is created
 
 The helper is covered by offline tests for complete matching snapshots, capped/filtered/partial runs, mismatched counts and scopes, duplicate or missing keys, changing datasets, invalid identifiers and partial comparison output. These tests do not claim a new live full-catalog comparison. Existing source and detector implementations were inspected at Salla build `0.1.10` and detector build `1.0.7` when this guide was written.
 
+On 3 November 2026, two live catalog samples each reached their 1,000-product cap with `exhaustiveRead: false`, despite the Actor runs succeeding. The helper was run against the capped output and rejected it. No full-catalog comparison or notification was produced from these samples. Use an eligible complete snapshot to exercise the comparison end to end.
+
 API references: [run metadata](https://docs.apify.com/api/v2/actor-run-get), [dataset metadata](https://docs.apify.com/api/v2/dataset-get), [dataset items](https://docs.apify.com/api/v2/dataset-items-get).
 
 ## بالعربي
