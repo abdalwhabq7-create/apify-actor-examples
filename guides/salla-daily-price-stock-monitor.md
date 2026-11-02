@@ -95,4 +95,6 @@ Keep `emitRemoved: false` while learning the workflow. To use removals, enable b
 
 `REMOVED` rows are charged like other returned rows. Read `removalNote` whenever expected removals are absent. If you only need price and stock changes, leave removal detection off.
 
+Need a percentage threshold on price changes between complete catalogs? Use the [verified two-snapshot comparison](salla-verified-snapshot-comparison.md). It checks source coverage before passing data to the existing Dataset Change Detector; the capped demo above does not qualify as a full snapshot.
+
 [Actor reference and small output example](../actors/salla-catalog-scraper/README.md) · [All examples](../README.md)

@@ -8,11 +8,11 @@ Five new bounded utilities are published, each verified with synthetic data on A
 
 | New tool | Purpose |
 |---|---|
-| [Sitemap Snapshot Diff — Added URLs and Lastmod Changes](actors/sitemap-snapshot-change-feed/README.md) | undefined |
-| [HTTP Security Headers — Presence Audit](actors/http-security-header-presence-audit/README.md) | undefined |
-| [OpenAPI Structural Change Checker — Review Feed](actors/openapi-structural-change-checker/README.md) | undefined |
-| [CSV and JSON Deduplicator — Trim and Keep First](actors/csv-json-deduplicate-normalize/README.md) | undefined |
-| [Static HTML Tables to JSON — Bounded Extraction](actors/static-html-tables-to-json/README.md) | undefined |
+| [Sitemap Snapshot Diff — Added URLs and Lastmod Changes](actors/sitemap-snapshot-change-feed/README.md) | Compare sitemap URLs and lastmod values across two snapshots. |
+| [HTTP Security Headers — Presence Audit](actors/http-security-header-presence-audit/README.md) | Check whether six security-header names are present. |
+| [OpenAPI Structural Change Checker — Review Feed](actors/openapi-structural-change-checker/README.md) | Flag structural changes between two OpenAPI documents for review. |
+| [CSV and JSON Deduplicator — Trim and Keep First](actors/csv-json-deduplicate-normalize/README.md) | Trim text and remove exact duplicates while keeping the first row. |
+| [Static HTML Tables to JSON — Bounded Extraction](actors/static-html-tables-to-json/README.md) | Extract bounded table rows from static HTML. |
 
 Existing tool added to the catalog: [Greenhouse, Lever & Ashby Jobs API](actors/greenhouse-lever-ashby-jobs/README.md).
 
@@ -24,8 +24,10 @@ Maintained by the developer of these Actors. The examples run the hosted tools o
 
 ## Practical guides
 
+- [Track Salla and Zid app marketplaces](actors/salla-zid-app-store-tracker/README.md): try a small app-directory example with names, ratings and published pricing fields.
 - [Monitor Salla prices and stock daily](guides/salla-daily-price-stock-monitor.md): save a baseline, interpret changed-only output, and set up a scheduled task with a cost limit.
 - [Build a shortlist of unseen Mostaql projects](guides/mostaql-new-project-monitor.md): filter opportunities, understand first-run backfill, and export project links, budgets and dates for review.
+- [Compare two complete Salla snapshots](guides/salla-verified-snapshot-comparison.md): verify coverage before filtering price and stock changes with the existing Dataset Change Detector.
 
 ## Choose a tool
 
