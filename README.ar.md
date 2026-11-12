@@ -1,6 +1,12 @@
 # أدوات جمع البيانات والمراقبة على Apify
 
-٣٠ أداة عامة: ٢٥ أداة سابقة و٥ أدوات جديدة. كل مثال يوضّح حدود التحقق منه؛ إضافة أداة الوظائف القديمة للفهرس ليست اختبار تشغيل جديدًا.
+٣٠ أداة عامة: ٢٩ غير متقادمة وأداة زد القديمة متقادمة على Apify. كل مثال يوضّح حدود التحقق منه؛ وجود الأداة في الفهرس ليس اختبار تشغيل جديدًا.
+
+لشغل كتالوجات زد الجديد راجع [أداة كتالوج متاجر زد](actors/zid-store-catalog-scraper/README.md). مدخلاتها ونتائجها تختلف عن أداة صفحات المنتجات القديمة؛ لا تنقل إعداداتك إليها مباشرة.
+
+## تحديث ١٢ نوفمبر ٢٠٢٦
+
+تحديث ١٢ نوفمبر: نشر إصلاحات تقارير التغطية في مستقل، البنك الدولي، WooCommerce، وظائف ATS وPDF. صار التقرير يوضح التوقف عند الحدود والصفحات الناقصة. نجحت اختبارات حالات الإصلاح داخل البناء السحابي؛ تجربة البنك الدولي الحية رجعت صفًا واحدًا. تحقق الأدوات الأربع الأخرى اعتمد بيانات اختبار، وليس سحبًا حيًا جديدًا. [تفاصيل التحقق](guides/coverage-repair-20261112.md).
 
 ## تحديث أكتوبر ٢٠٢٦
 
@@ -36,7 +42,7 @@
 | منتجات Shopify | [افتح المثال](actors/shopify-catalog-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/shopify-catalog-scraper) |
 | منتجات WooCommerce | [افتح المثال](actors/woocommerce-public-catalog-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/woocommerce-public-catalog-scraper) |
 | كتالوج متاجر زد | [افتح المثال](actors/zid-store-catalog-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/zid-store-catalog-scraper) |
-| صفحات منتجات زد | [افتح المثال](actors/zid-public-product-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/zid-public-product-scraper) |
+| صفحات منتجات زد — متقادمة | [المثال التاريخي والبديل](actors/zid-public-product-scraper/README.md) |
 | منتجات YouCan | [افتح المثال](actors/youcan-store-catalog-scraper/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/youcan-store-catalog-scraper) |
 | تطبيقات سلة وزد | [افتح المثال](actors/salla-zid-app-store-tracker/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/salla-zid-app-store-tracker) |
 | فحص جودة الكتالوج | [افتح المثال](actors/catalog-product-data-quality-checker/README.md) · [شغّل على Apify](https://apify.com/abdulwhab95/catalog-product-data-quality-checker) |

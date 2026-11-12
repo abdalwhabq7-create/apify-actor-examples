@@ -1,6 +1,12 @@
 # Apify Actor examples — catalogs, monitoring and data extraction
 
-**30 hosted data tools. Pick a task, check its verification notes, and run a small example.**
+**30 public tool listings: 29 not deprecated and one deprecated. Pick a task, check its verification notes, and run a small example.**
+
+## November 12 coverage fixes
+
+Updated Mostaql (0.1.7), World Bank (1.0.3), WooCommerce (1.0.7), ATS Jobs Change Feed (1.0.6) and PDF Tables/Text (1.0.6) to report known partial or capped output accurately. The regression tests run inside each cloud build. World Bank also passed a fresh one-row live check; the other four changes used offline fixtures. See [release verification and limits](guides/coverage-repair-20261112.md).
+
+The page-oriented [Zid Product Scraper](actors/zid-public-product-scraper/README.md) is deprecated on Apify. For new catalog work, consider the [Zid Store Catalog Scraper](actors/zid-store-catalog-scraper/README.md). Its sitemap-based inputs and output differ; it is not a drop-in replacement.
 
 ## November 2026 monitoring update
 
@@ -46,7 +52,7 @@ Maintained by the developer of these Actors. The examples run the hosted tools o
 | [Shopify Product Price & Catalog Scraper](actors/shopify-catalog-scraper/README.md) | Give a Shopify store domain and export public product variants with SKU, price and availability. |
 | [WooCommerce Public Catalog — Prices & Stock](actors/woocommerce-public-catalog-scraper/README.md) | Give a WooCommerce store URL and export public Store API products with prices, currency and stock status. |
 | [Zid Store Catalog & Price Scraper](actors/zid-store-catalog-scraper/README.md) | Give a Zid store URL and collect product pages through its sitemap, with prices, discounts and availability. |
-| [Zid Product Scraper — Arabic Prices & Availability](actors/zid-public-product-scraper/README.md) | Give Zid product or catalog URLs and extract Product JSON-LD into product names, prices, currency and stock fields. |
+| [Zid Product Scraper — Deprecated](actors/zid-public-product-scraper/README.md) | Historical page-oriented example. See the active Zid catalog tool above for new catalog workflows. |
 | [YouCan Store Catalog & Price Scraper](actors/youcan-store-catalog-scraper/README.md) | Give a YouCan store URL and export its public product feed, including prices and available variant metadata. |
 | [Salla & Zid App Store Tracker](actors/salla-zid-app-store-tracker/README.md) | Choose Salla or Zid app directories and export app names, categories, ratings and published pricing fields. |
 

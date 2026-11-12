@@ -1,5 +1,7 @@
 # Zid Product Scraper — Arabic Prices & Availability
 
+**Deprecated on Apify (checked 12 November 2026).** This page preserves the historical example. For new catalog workflows, review [Zid Store Catalog & Price Scraper](../zid-store-catalog-scraper/README.md). The alternative uses sitemap-based discovery and different inputs; migrate deliberately rather than sending the old input unchanged.
+
 <img src="icon.png" alt="" width="64" height="64">
 
 Give Zid product or catalog URLs and extract Product JSON-LD into product names, prices, currency and stock fields.

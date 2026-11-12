@@ -33,6 +33,8 @@
   },
   {
     "name": "zid-public-product-scraper",
+    "deprecated": true,
+    "alternative": "zid-store-catalog-scraper",
     "title": "Zid Product Scraper — Arabic Prices & Availability",
     "category": "Commerce",
     "arabic": "صفحات منتجات زد",
