@@ -1,5 +1,7 @@
 # Apify Actor examples — catalogs, monitoring and data extraction
 
+**New to Salla exports? [Start with one store and five products](guides/salla-first-export.md).** Check input, pricing, output and coverage before setting up monitoring.
+
 **30 public tool listings: 29 not deprecated and one deprecated. Pick a task, check its verification notes, and run a small example.**
 
 ## November 12 coverage fixes
